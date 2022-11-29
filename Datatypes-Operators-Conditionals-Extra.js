@@ -45,6 +45,37 @@ console.log(fullName);
 */
 
 console.log("EXERCISE 4 \n")
+let a = 32;
+let b = 20;
+let c = 60;
+
+if (a - b > 0 && a - c > 0) {
+    if (b - c > 0) {
+        console.log(a, ">", b, ">", c);
+    }
+    else {
+        console.log(a, ">", c, ">", b);
+    }
+}
+else if (b - c > 0 && b - a > 0) {
+    if (c - a > 0) {
+        console.log(b, ">", c, ">", a);
+    }
+    else {
+        console.log(b, ">", a, ">", c);
+    }
+}
+else if (c - a > 0 && c - b > 0) {
+    if (a - b > 0) {
+        console.log(c, ">", a, ">", b);
+    }
+    else {
+        console.log(c, ">", b, ">", a);
+    }
+}
+else {
+    console.log("May be this is not a Number");
+}
 
 
 
@@ -76,6 +107,9 @@ console.log(longestString)
  Write a piece of code for checking if a given value is a integer or not.
 */
 console.log("EXERCISE 7 \n")
+let value1 = 1.3;
+let result = Number.isInteger(value1);
+console.log(result)
 
 
 /*EX 8
